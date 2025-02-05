@@ -1,10 +1,10 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   </head>
   <body class="product">
     <header class="mainNav">
@@ -18,47 +18,25 @@
       </nav>
     </header>
     <main class="product-layout">
-      <ol class="breadcrumbs">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="category.html">Brands</a></li>
-        <li><a href="productlist.html">Nike</a></li>
-        <li>Sahara Team India Fanwear Round Neck Jersey</li>
-      </ol>
-      <div class="product-container">
-        <section class="product-image">
-          <img src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp" alt="Sahara Team India Fanwear Round Neck Jersey" />
-        </section>
-
-        <section class="product-info">
-          <h1>Sahara Team India Fanwear Round Neck Jersey</h1>
-          <p class="brand">Nike | Tshirts</p>
-          <p class="price">DKK 1595,-</p>
-          <form>
-            <div class="size-selection">
-              <label for="size">Choose a size:</label>
-              <select name="size" id="size">
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-              </select>
-            </div>
-            <button class="add-to-cart">Add to basket</button>
-          </form>
-          <div class="product-details">
-            <h2>Product Information</h2>
-            <dl>
-              <dt>Model name</dt>
-              <dd>Sahara Team India Fanwear Round Neck Jersey</dd>
-              <dt>Color</dt>
-              <dd>Blue</dd>
-              <dt>Inventory number</dt>
-              <dd>1163</dd>
-            </dl>
+      <section class="product-image">
+        <img id="productImage" src="" alt="Produktbillede" class="productImage" />
+        <div id="saleLabel" class="saleLabel"></div>
+      </section>
+      <section class="product-details">
+        <h1 id="productName">Produktnavn</h1>
+        <p id="productType" class="productType">Category</p>
+        <p id="productPrice" class="productPrice">Price: DKK</p>
+        <p id="discountPrice" class="discountPrice">NOW: DKK</p>
+        <div id="soldOutLabel" class="soldOutLabel">SOLD OUT</div>
+        <form>
+          <h2>Select size</h2>
+          <div id="sizeOptions" class="size-options">
+            <!-- Dynamiske størrelser indsættes her -->
           </div>
-        </section>
-      </div>
+        </form>
+        <button class="buyButton">Add to Bag</button>
+      </section>
     </main>
-    <script src="single.js"></script>
+    <script src="product.js"></script>
   </body>
 </html>
